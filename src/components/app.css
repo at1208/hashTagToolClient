@@ -11,6 +11,7 @@
     color: white;
     margin-bottom: 30px;
     height: 120px;
+    width: auto;
     padding-top: 30px;
     font-size: 50px;
 
@@ -40,10 +41,9 @@ border-radius: 0px;
 
 }
 .a8{
+  width: auto;
   font-size: 50px;
   padding-top: 30px;
-  font-family: 'Pacifico', cursive;
-
 }
 .container-fluid{
   padding-left: 120px;

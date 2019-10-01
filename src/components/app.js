@@ -45,7 +45,7 @@ class App extends React.Component {
         transitions = {true}
         shadow={true}
 
-        styles={{ sidebar: { backgroundColor: 'white', zindex:1, top:0,   bottom: 950,} }}
+        styles={{ sidebar: { backgroundColor: 'white', zindex:1}, width:'auto' }}
       >
         <button onClick={() => this.onSetSidebarOpen(true)} className='btn btn-lg float-left'>
         <i className="fa fa-bars a2"></i>
