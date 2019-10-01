@@ -1,6 +1,6 @@
 .a1{
   background-color: #e3f2fd;
-  height: 70px;
+  height: 120px;
 }
 .a2{
   font-size: 30px;
@@ -10,17 +10,22 @@
     background-color: #880e4f;
     color: white;
     margin-bottom: 30px;
+    height: 120px;
+    padding-top: 30px;
+    font-size: 50px;
 
 }
 .a5{
   width: 100px;
   background-color: #e91e63;
   margin-top: 5px;
+
 }
 .btn{
 padding: 0px;
-width: 130px;
-margin-left: 15px;
+width: 240px;
+ padding-top: 15px;
+ padding-bottom: 15px;
 margin-top: 15px;
 color: white;
 border-radius: 0px;
@@ -32,8 +37,13 @@ border-radius: 0px;
   width: 100%;
   margin-right: 20px;
 
+
 }
 .a8{
-  font-size: 30px;
-  padding-top: 10px;
+  font-size: 50px;
+  padding-top: 30px;
+}
+.container-fluid{
+  padding-left: 120px;
+  padding-right: 120px;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Newsletter = () => {
   return <>
-    <h1 className='text-center'>Newsletter </h1>
+    <h1 className='text-center'>Newsletter</h1>
   </>
 }
 
