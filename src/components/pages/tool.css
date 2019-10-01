@@ -1,0 +1,16 @@
+.b1{
+  width: 100px;
+  margin-right: 15px;
+  background-color: #42a5f5
+}
+.b2{
+  width: 150px;
+  margin-left: 60px;
+  margin-top: 20px;
+  background-color: #fff59d;
+  color:black;
+}
+.b3{
+  height: 600px;
+  width: 600px;
+}

@@ -1,5 +1,5 @@
 .a1{
-  background-color: #e3f2fd;
+  background-color:#a30000;
   height: 120px;
 }
 .a2{
@@ -14,6 +14,8 @@
     width: auto;
     padding-top: 30px;
     font-size: 50px;
+    font-family: 'Fredoka One', cursive;
+
 
 }
 .a5{
@@ -41,9 +43,11 @@ border-radius: 0px;
 
 }
 .a8{
+  color: black;
   width: auto;
-  font-size: 50px;
+  font-size: 40px;
   padding-top: 30px;
+  font-family: 'Pacifico'
 }
 .container-fluid{
   padding-left: 120px;
