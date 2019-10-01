@@ -3,7 +3,7 @@
   height: 120px;
 }
 .a2{
-  font-size: 30px;
+  font-size: 60px;
 }
 
 .a4{
@@ -42,8 +42,13 @@ border-radius: 0px;
 .a8{
   font-size: 50px;
   padding-top: 30px;
+  font-family: 'Pacifico', cursive;
+
 }
 .container-fluid{
   padding-left: 120px;
   padding-right: 120px;
+}
+.sidebar{
+ position:  sticky;
 }

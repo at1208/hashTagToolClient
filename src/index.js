@@ -18,7 +18,7 @@ ReactDOM.render(
    <Route path='/' component={App} />
    <Route path='/blog' component={Blog} />
    <Route path='/contact' component={Contact} />
-   <Route path='/newsletter' component={Contact} />
+   <Route path='/newsletter' component={Newsletter} />
    <Route path='/services' component={Services} />
    <Route path='/tools' component={Tools} />
   </div>
