@@ -19,8 +19,25 @@ class Home extends Component {
 
               <Sidebar
         sidebar={
-          <div  >
+          <div>
           <h3 className='a4'> Sidebar content </h3>
+
+          <div className='text-center a6 shadow'>
+          <button className=' btn btn-block a5'>Tool</button>
+          </div>
+          <div className='text-center a6 shadow'>
+          <button className=' btn btn-block a5'>Blog</button>
+          </div>
+          <div className='text-center a6 shadow'>
+          <button className=' btn btn-block a5'>Services</button>
+          </div>
+          <div className='text-center a6 shadow'>
+          <button className=' btn btn-block a5'>Newsletter</button>
+          </div>
+          <div className='text-center a6 shadow'>
+          <button className=' btn btn-block a5'>Contact</button>
+          </div>
+
           </div>
         }
         open={this.state.sidebarOpen}
