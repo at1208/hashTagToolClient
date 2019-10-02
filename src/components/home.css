@@ -1,0 +1,32 @@
+
+.jumbotron{
+  color: #e3f2fd;
+  font-family: 'Pacifico';
+  border-radius: 0px;
+  background: #41295a;
+  background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+  background: linear-gradient(to right, #2F0743, #41295a);
+
+}
+
+.a1{
+  color: black;
+
+
+
+}
+.a2{
+  font-size: 33px;
+  margin-left: 10px;
+  margin-top: 3px;
+  color: white;
+}
+.a3{
+  margin-top: 15px;
+}
+.a4{
+
+  background-color: #4527a0;
+    padding: 20px;
+    color: white;
+}
