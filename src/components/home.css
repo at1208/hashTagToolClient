@@ -1,11 +1,11 @@
 
 .jumbotron{
-  color: #e3f2fd;
-  font-family: 'Pacifico';
+  color: white;
+
+  font-family: 'Sigmar One', cursive;
   border-radius: 0px;
-  background: #41295a;
-  background: -webkit-linear-gradient(to right, #2F0743, #41295a);
-  background: linear-gradient(to right, #2F0743, #41295a);
+  background: #ffca28;  /* fallback for old browsers */
+
 
 }
 
@@ -22,21 +22,32 @@
   color: white;
 }
 .a3{
+
   margin-top: 15px;
+
 }
 .a4{
+   font-stretch: expanded;
+   font-family: 'Sigmar One', cursive;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #ffd54f;  /* fallback for old browsers */
 
-    background-color: #4527a0;
-    padding: 20px;
-    color: white;
+
+    color: black;
     margin-bottom: 40px;
 }
 .a5{
+  font-weight: bold;
+
+font-family: 'Sigmar One', cursive;
 }
 
 .a6{
-  background-color: #29b6f6;
+  background-color: #e91e63;
   margin-bottom: 20px;
   width: 150px;
-  margin-left: 50px;
+  margin-left: 20px;
 }
