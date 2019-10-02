@@ -18,7 +18,7 @@ class Home extends Component {
   }
   render(){
     return <>
-              <div className='jumbotron text-center a1'>
+              <div className='jumbotron text-center shadow a1'>
                <Slide bottom><h1 className='a3'> <b style={{ color: '#bbdefb'}}>HashTag</b> <b style={{ color: 'white'}}>Research</b><b style={{ color: '#bbdefb'}}> Tool</b> </h1>
                </Slide>
     </div>
@@ -26,7 +26,7 @@ class Home extends Component {
               <Sidebar
         sidebar={
           <div>
-       <h3 className='a4'>  <Fade left> <span>< MdBlurOn style={{ color:'#ff3d00'}}/>Content</span>  </Fade></h3>
+       <h3 className='a4 shadow'>  <Fade left> <span>< MdBlurOn style={{ color:'#ff3d00'}}/>Content</span>  </Fade></h3>
 
   <Fade left>
          <Link to='/tools'>
