@@ -4,6 +4,8 @@ import Sidebar from "react-sidebar";
 import { Link } from 'react-router-dom'
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
+import { MdContacts,MdAllInclusive,MdDashboard,MdViewCarousel,MdWbIridescent,MdBlurOn } from "react-icons/md";
+
 
 
 class Home extends Component {
@@ -17,19 +19,20 @@ class Home extends Component {
   render(){
     return <>
               <div className='jumbotron text-center a1'>
-               <Slide bottom><h1 className='a3'> <b style={{ color: '#c62828'}}>HashTag</b> <b style={{ color: '#f4511e'}}>Research</b><b style={{ color: '#ec407a'}}> Tool</b> </h1>
+               <Slide bottom><h1 className='a3'> <b style={{ color: '#bbdefb'}}>HashTag</b> <b style={{ color: 'white'}}>Research</b><b style={{ color: '#bbdefb'}}> Tool</b> </h1>
                </Slide>
     </div>
 
               <Sidebar
         sidebar={
           <div>
-       <h3 className='a4'>  <Fade left>  Content  </Fade></h3>
+       <h3 className='a4'>  <Fade left> <span>< MdBlurOn style={{ color:'#ff3d00'}}/>Content</span>  </Fade></h3>
 
   <Fade left>
          <Link to='/tools'>
           <div className='text-center a6 shadow'>
-          <button className=' btn btn-block a5'>Tool</button>
+
+          <button className=' btn btn-block a5'> <MdAllInclusive style={{ marginRight:'5px', color:'white'}} />  Tool</button>
           </div>
          </Link>
  </Fade>
@@ -37,7 +40,7 @@ class Home extends Component {
   <Fade left>
         <Link to='/blog'>
           <div className='text-center a6 shadow'>
-          <button className=' btn btn-block a5'>Blog</button>
+          <button className=' btn btn-block a5'><MdWbIridescent style={{ marginRight:'5px',color:'white'}}/>Blog</button>
           </div>
           </Link>
   </Fade>
@@ -45,7 +48,7 @@ class Home extends Component {
   <Fade left>
           <Link to='/services'>
           <div className='text-center a6 shadow'>
-          <button className=' btn btn-block a5'>Services</button>
+          <button className=' btn btn-block a5'>< MdDashboard style={{ marginRight:'5px',color:'white'}} />Services</button>
           </div>
           </Link>
   </Fade>
@@ -53,7 +56,7 @@ class Home extends Component {
   <Fade left>
           <Link to='/newsletter'>
           <div className='text-center a6 shadow'>
-          <button className=' btn btn-block a5'>Newsletter</button>
+          <button className=' btn btn-block a5'> <MdViewCarousel style={{ marginRight:'1px',color:'white'}} />Newsletter</button>
           </div>
           </Link>
   </Fade>
@@ -61,7 +64,7 @@ class Home extends Component {
   <Fade left>
           <Link to='/contact'>
           <div className='text-center a6 shadow'>
-          <button className=' btn btn-block a5'>Contact</button>
+          <button className=' btn btn-block a5'>< MdContacts style={{ marginRight:'5px',color:'white'}}/> Contact</button>
           </div>
           </Link>
   </Fade>

@@ -4,7 +4,7 @@
 
   font-family: 'Sigmar One', cursive;
   border-radius: 0px;
-  background: #ffca28;  /* fallback for old browsers */
+  background: #880e4f;  /* fallback for old browsers */
 
 
 }
@@ -36,7 +36,8 @@
     background: #ffd54f;  /* fallback for old browsers */
 
 
-    color: black;
+    color: #e64a19
+;
     margin-bottom: 40px;
 }
 .a5{
@@ -48,6 +49,6 @@ font-family: 'Sigmar One', cursive;
 .a6{
   background-color: #e91e63;
   margin-bottom: 20px;
-  width: 150px;
+  width: 160px;
   margin-left: 20px;
 }
