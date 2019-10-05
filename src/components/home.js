@@ -17,11 +17,11 @@ class Home extends Component {
 
            <div className='col-lg-12 justify-content-center container-fluid text-center'>
 
-              <Link to='/blog'><button className='col-lg-2 a1 btn'>Blog</button></Link>
-              <Link to='/contact'><button className='col-lg-2 a1 btn'>Contact</button></Link>
-              <Link to='/newsletter'><button className='col-lg-2 a1 btn'>Newsletter</button></Link>
               <Link to='/tools'><button className='col-lg-2 a1 btn'>Tool</button></Link>
+              <Link to='/newsletter'><button className='col-lg-2 a1 btn'>Newsletter</button></Link>
+              <Link to='/blog'><button className='col-lg-2 a1 btn'>Blog</button></Link>
               <Link to='/services'><button className='col-lg-2 a1 btn'>Services</button></Link>
+              <Link to='/contact'><button className='col-lg-2 a1 btn'>Contact</button></Link>
 
            </div>
           </div>
