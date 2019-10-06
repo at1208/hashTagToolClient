@@ -1,11 +1,12 @@
 .a1{
   background-color: grey;
-  margin:1px;
+  margin:2.5px;
+
   color: black;
   font-weight: bold;
-  background: #D3CCE3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #D3CCE3;
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+background: linear-gradient(to right, #E9E4F0, #D3CCE3);
 
 }
 .a1:hover{
@@ -16,14 +17,18 @@ background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, F
   color: white;
   font-weight: bold;
 }
+.a3{
+  margin-right: 10px;
+  color: #880e4f;
+}
 .btn{
   border:0px;
   padding:0px;
 }
 .jumbotron{
-background: #C33764;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #C33764;
+background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+background: linear-gradient(to right, #1D2671, #C33764);
 margin-bottom: 0px;
 border-radius: 0px;
 }
