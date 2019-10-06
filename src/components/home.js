@@ -11,19 +11,21 @@ class Home extends Component {
   render(){
     return <div>
 
-           <div className='jumbotron'>
-           <h1 className='text-center a2'>HashTag Research Tool</h1>
-           </div>
+ <div className='a1'>
+   <input  className='a3 float-left'/>
+ <div className='container-fluid'>
+<button className='btn a2 float-right'>Contact</button>
+<button className='btn a2 float-right'>Services</button>
+<button className='btn a2 float-right'>Tools</button>
+<button className='btn a2 float-right'>Newsletter</button>
+<button className='btn a2 float-right'>Blog</button>
+ </div>
 
-           <div className='col-lg-12 justify-content-center container-fluid text-center'>
-
-              <Link to='/tools'><button className='col-lg-2 a1 btn'><MdWbIridescent className='a3'/>Tool</button></Link>
-              <Link to='/newsletter'><button className='col-lg-2 a1 btn'><MdAllInclusive className='a3'/>Newsletter</button></Link>
-              <Link to='/blog'><button className='col-lg-2 a1 btn'><MdDashboard className='a3'/>Blog</button></Link>
-              <Link to='/services'><button className='col-lg-2 a1 btn'><MdViewCarousel className='a3'/>Services</button></Link>
-              <Link to='/contact'><button className='col-lg-2 a1 btn'> <MdContacts className='a3'/>Contact</button></Link>
-
-           </div>
+ </div>
+    <div className='container text-center'>
+   <h1 className='  a4'> Hashtag Research Tool </h1>
+   <p className='text-center a5'>Up your Instagram game by knowing the exact hashtags top influencers are using</p>
+   </div>
           </div>
   }
 }
