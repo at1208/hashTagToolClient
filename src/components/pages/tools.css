@@ -1,5 +1,41 @@
 .b1{
   margin-top: 10px;
   background-color: #ff8a50;
- 
+
+}
+
+.b2{
+  background-color: #ff8a50;
+  height: 70px;
+  width: 206px;
+  margin-top: 14px;
+  margin-left: 08px;
+
+}
+.b3{
+  height: 40px;
+ margin-top: 15px;
+}
+.b4{
+  height: 100px;
+  background-color: #ff5722;
+  width: 250px;
+  border-radius: 2px;
+}
+.b5{
+  background-color: #ffebee;
+  font-size: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #ff8a50
+}
+.b6{
+  background-color: #ff5722;
+  width:250px;
+  height: 90px;
 }
