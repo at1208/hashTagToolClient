@@ -12,13 +12,14 @@ class Home extends Component {
     return <div>
 
  <div className='a1'>
-   <input  className='a3 float-left'/>
- <div className='container-fluid'>
-<button className='btn a2 float-right'>Contact</button>
-<button className='btn a2 float-right'>Services</button>
-<button className='btn a2 float-right'>Tools</button>
-<button className='btn a2 float-right'>Newsletter</button>
-<button className='btn a2 float-right'>Blog</button>
+
+ <div className='container-fluid text-center'>
+    <Link to='/blog'><button className='btn a2'>Blog</button></Link>
+  <Link to='/newsletter'><button className='btn a2 '>Newsletter</button></Link>
+  <Link to='/contact'><button className='btn a2'>Contact</button></Link>
+  <Link to='/services'><button className='btn a2'>Services</button></Link>
+  <Link to='/tools'><button className='btn a2 '>Tools</button></Link>
+
  </div>
 
  </div>
