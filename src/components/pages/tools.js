@@ -183,7 +183,7 @@ console.log(this.state.value)
              <Slide top>
  <div className='g3'>
 
- <div  className='g11'>
+ <div  className='g11 g33'>
   <b>High Difficulty Hashtag</b>
 </div>
 
