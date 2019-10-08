@@ -1,9 +1,11 @@
 
 .react-autosuggest__input{
-  font-size: 25px;
+  font-size: 28px;
   text-align: center;
-  margin-top: 13px;
-  margin-left: 20px;
+  height: 64px;
+  width: 294px
+
+
 }
 .react-autosuggest__suggestions-container{
 
@@ -17,37 +19,45 @@
 }
 
 .d1{
+  border-color: black;
+  border-style: solid;
   width: 300px;
   height: 70px;
-  background-color: #ff7043;
+  /* background-color: #ff7043;
   margin-left: 15px;
-  margin-top: 10px;
+  margin-top: 10px; */
 }
-.d2{
+/* .d2{
   width: 330px;
   height: 90px;
   background-color: #ff5722;
-}
+} */
 
 .b5{
+  font-weight: bold;
   margin-top: 10px;
-  font-size: 30px;
+  font-size: 15px;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-left: 15px;
   background-color:#fbe9e7;
-  color: #ff5722;
+  color: black;
 
 }
 
-.b6{
+/* .b6{
   height: 70px;
   width: 215px;
   margin-left: 13px;
   background-color:#ff7043;
   margin-top: 10px;
-}
+} */
 .b7{
-  height: 90px;
-  width: 240px;
+  margin-top: 50px;
+  height: 70px;
+  width: 205px;
   background-color: #ff5722;
   margin-left: 20px;
 }
@@ -60,7 +70,7 @@
 
 }
 .c2{
- margin-bottom: 200px;
+ margin-bottom: 60px;
 }
 
 .g1{
@@ -87,6 +97,14 @@
  height: 200px;
  width: 200px;
 }
+
+.j1{
+  height: 100px;
+  width: 300px;
+
+
+}
+
 
 @media (max-width: 650.98px) {
   .react-autosuggest__input{

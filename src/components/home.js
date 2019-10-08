@@ -35,7 +35,7 @@ class Home extends Component {
            </Bounce>
 
                      <Bounce left>
-   <p className='text-center a5'>Up your Instagram game by knowing the exact hashtags top influencers are using</p>
+   <h6 className='text-center a5'>Up your Instagram game by knowing the hashtags top influencers are using</h6>
               </Bounce>
    </div>
           </div>

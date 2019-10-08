@@ -111,21 +111,21 @@ console.log(this.state.value)
     const { value, suggestions } = this.state;
 
     const inputProps = {
-        placeholder: 'Search for niche',
+        placeholder: '',
         value,
         onChange: this.onChange
       };
 
     console.log(this.state.data)
     return <div className='container'>
-            <Slide top>
-    <h1 className='text-center'>Tool</h1>
-            </Slide>
+
 
 <div className='container c2'>
  <Zoom top>
         <div className='container b13 row justify-content-center'>
-
+          <div className='j1'>
+          <b>Select A Niche Of Your Interest</b>
+          <div>(start typing in and select from option)</div>
              <div className='d2'>
                    <div className='d1'>
                         <Autosuggest
@@ -138,11 +138,11 @@ console.log(this.state.value)
                    />
                   </div>
             </div>
-
+      </div>
 
         <div className='b7'>
             <div className='b6'>
-            <button className='b5' onClick = {this.onSubmitNiche}>Find Hashtag</button>
+            <button className='b5' onClick = {this.onSubmitNiche}>Find Hashtags</button>
              </div>
             </div>
 
@@ -162,8 +162,7 @@ console.log(this.state.value)
  <p>(For less than 500 followers)</p>
  </div>
 {this.state.data.Hashtag1}
-<br />
-{this.state.data.Difficulty1}
+
 
  </div>
             </Slide>
@@ -176,8 +175,7 @@ console.log(this.state.value)
   <p>(For less than 10,000 followers)</p>
  </div>
 {this.state.data.Hashtag2}
-<br />
- {this.state.data.Difficulty2}
+
  </div>
             </Slide>
              <Slide top>
@@ -188,8 +186,7 @@ console.log(this.state.value)
 </div>
 
 {this.state.data.Hashtag3}
-<br />
-{this.state.data.Difficulty3}
+
  </div>
         </Slide>
  </div>
