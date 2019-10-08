@@ -124,7 +124,7 @@ console.log(this.state.value)
 
 <div className='container c2'>
  <Zoom top>
-        <div className='container b13 row '>
+        <div className='container b13 row justify-content-center'>
 
              <div className='d2'>
                    <div className='d1'>
@@ -152,7 +152,41 @@ console.log(this.state.value)
 </div>
 
 
- <div className='container b77 text-center'>
+ <div className='container b77 text-center row justify-content-center'>
+
+ <div className='g1'>
+
+ <div className='g11'>
+ <b>Low Difficulty Hashtag</b>
+ <p>(For less than 500 followers)</p>
+ </div>
+{this.state.data.Hashtag1}
+<br />
+{this.state.data.Difficulty1}
+
+ </div>
+
+ <div className='g2'>
+
+ <div className='g11'>
+  <b>Medium Difficulty Hashtag</b>
+  <p>(For less than 10,000 followers)</p>
+ </div>
+{this.state.data.Hashtag2}
+<br />
+ {this.state.data.Difficulty2}
+ </div>
+
+ <div className='g3'>
+
+ <div  className='g11'>
+  <b>High Difficulty Hashtag</b>
+</div>
+
+{this.state.data.Hashtag3}
+<br />
+{this.state.data.Difficulty3}
+ </div>
 
  </div>
 
