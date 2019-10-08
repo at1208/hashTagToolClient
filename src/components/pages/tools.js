@@ -122,16 +122,12 @@ console.log(this.state.value)
     <h1 className='text-center'>Tool</h1>
             </Slide>
 
-<div className='container-fluid row-sm-6 c2'>
+<div className='container c2'>
+ <Zoom top>
+        <div className='container b13 row '>
 
-        <div className='container text-center b13 row'>
-<Zoom top>
-
-            <div className='b4 text-center container'>
-
-                <div className='container b2 float-left'>
-
-
+             <div className='d2'>
+                   <div className='d1'>
                         <Autosuggest
                      suggestions={suggestions}
                      onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
@@ -140,52 +136,24 @@ console.log(this.state.value)
                      renderSuggestion={renderSuggestion}
                      inputProps={inputProps}
                    />
-
-               </div>
-
-           </div>
-
-</Zoom>
-
-<Zoom top>
-            <div className='b6 container'>
-            <button className='b5 btn-lg' onClick = {this.onSubmitNiche}>Find Hashtag</button>
+                  </div>
             </div>
 
+
+        <div className='b7'>
+            <div className='b6'>
+            <button className='b5' onClick = {this.onSubmitNiche}>Find Hashtag</button>
+             </div>
+            </div>
+
+
+</div>
 </Zoom>
 </div>
 
-</div>
 
+ <div className='container b77 text-center'>
 
- <div className='container b7 text-center'>
-        <Fade bottom>
- <div className='b12 container'>
-   <b className='b11' > <span className='b88'>Niche ID</span>  {this.state.data.Niche_ID}</b>
- </div>
-         </Fade>
-
-        <Fade bottom>
-    <div className='container b8'>
-    <b className='b11'><span className='b88'>Hashtag 1</span> {this.state.data.Hashtag1}</b>
-    <br />
-    <b className='b11'><span className='b88'>Difficulty Score 1</span> {this.state.data.Difficulty1}</b>
-    </div>
-       </Fade>
-        <Fade bottom>
-    <div className='container b9'>
-      <b className='b11'><span className='b99'>Hashtag 2</span> {this.state.data.Hashtag2}</b>
-      <br />
-      <b className='b11'> <span className='b99'>Difficulty Score 2</span> {this.state.data.Difficulty2}</b>
-    </div>
-       </Fade>
-        <Fade bottom>
-    <div className='container b10'>
-      <b className='b11'><span className='b1010'>Hashtag 3</span> {this.state.data.Hashtag3}</b>
-      <br />
-      <b className='b11'> <span className='b1010'>Difficulty Score 3 </span>{this.state.data.Difficulty3}</b>
-    </div>
-           </Fade>
  </div>
 
 
