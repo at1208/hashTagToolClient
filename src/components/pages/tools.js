@@ -154,6 +154,7 @@ console.log(this.state.value)
 
  <div className='container b77 text-center row justify-content-center'>
 
+            <Slide top>
  <div className='g1'>
 
  <div className='g11'>
@@ -165,7 +166,9 @@ console.log(this.state.value)
 {this.state.data.Difficulty1}
 
  </div>
+            </Slide>
 
+            <Slide top>
  <div className='g2'>
 
  <div className='g11'>
@@ -176,7 +179,8 @@ console.log(this.state.value)
 <br />
  {this.state.data.Difficulty2}
  </div>
-
+            </Slide>
+             <Slide top>
  <div className='g3'>
 
  <div  className='g11'>
@@ -187,7 +191,7 @@ console.log(this.state.value)
 <br />
 {this.state.data.Difficulty3}
  </div>
-
+        </Slide>
  </div>
 
 
