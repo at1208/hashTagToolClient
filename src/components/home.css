@@ -50,11 +50,12 @@ font-size: 40px;
   margin: 30px;
 }
 .s3{
-  height: 50px;
-  width: 260px;
+  height: 70px;
+  width: 300px;
   border-color: black;
-  border-width: thick;
+  border-width: 3;
   border-style: solid;
+  font-size: 30px
 }
 .s4{
 margin-bottom: 32px;

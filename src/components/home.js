@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 import Zoom from 'react-reveal/Zoom';
+import { CSVLink, CSVDownload } from "react-csv";
+import Autosuggest from 'react-autosuggest';
+
+
 
 
 
@@ -12,9 +16,158 @@ import { MdContacts,MdAllInclusive,MdDashboard,MdViewCarousel,MdWbIridescent } f
 
 
 
+
+
+
+const username = [
+  {
+   name: 'animal lover',
+
+  },
+  {
+   name: 'business',
+  },
+  {
+   name: 'fashion',
+  },
+  {
+   name: 'food',
+  },
+  {
+   name: 'fitness',
+  },
+
+  {
+   name: 'lifestyle',
+  },
+  {
+   name: 'painting',
+  },
+  {
+   name: 'pets',
+  },
+  {
+   name: 'shopping',
+  },
+  {
+   name: 'travel',
+  },
+
+]
+
+
+
+const getSuggestions = value => {
+  const inputValue = value.trim().toLowerCase();
+  const inputLength = inputValue.length;
+
+  return inputLength === 0 ? [] : username.filter(lang =>
+    lang.name.toLowerCase().slice(0, inputLength) === inputValue
+  );
+};
+
+
+const getSuggestionValue = suggestion => suggestion.name;
+
+const renderSuggestion = suggestion => (
+
+  <div className='c1 shadow'>
+    {suggestion.name}
+      </div>
+
+);
+
 class Home extends Component {
 
+  state = {
+      value: '',
+      suggestions: [],
+      csv: false,
+    };
+
+    onChange = (event, { newValue }) => {
+   this.setState({
+     value: newValue,
+     csv: true
+   });
+ };
+
+ onSuggestionsFetchRequested = ({ value }) => {
+    this.setState({
+      suggestions: getSuggestions(value)
+    });
+  };
+
+  onSuggestionsClearRequested = () => {
+    this.setState({
+      suggestions: []
+    });
+  };
+
+
+
+
+
+
+
+
+
+
+
   render(){
+
+    const  csvData = [
+    [  "_sir.mango",],
+    ["  mollyrue_and_lillylou",],
+    ["  elenagarcia390",],
+    ["  agnieszka_zakrzewska_",],
+    ["  jax_introuble",],
+    ["  _lifeofspeedy_",],
+    ["  vovodicas",],
+    ["  iam.niebla",],
+    ["  animals.col",],
+    ["  ramannarula",],
+    ["  andreassfischer",],
+    ["  lady_red_dragon",],
+    ["  shot_by_somu",],
+    ["  naike_belen",],
+    ["  iamrobbellamy"],
+    ["  melissajayne",],
+    ["  lene.m_art",],
+    ["  amiyafuriru",],
+    ["  theroguemuslim",],
+    ["  softservemarketing",],
+    ["  ambi.mkd",],
+    ["  toryon_thomas",],
+    ["  thebogchique",],
+    ["  james1fab",],
+    ["  punto_del_lusso",],
+    ["  primebusinessstrategy",],
+    ["  aa.taxlegal",],
+    ["  angela.iris_",],
+    ["  amia.maro.service",],
+    ["  elshen_bakxishoff",],
+    ["  glimpse.light",],
+    ["  daryls_life_story",],
+    ["  mktaprendiz",],
+    ["  persian_gemstones",],
+    ["  gp_2911"]
+    ];
+
+
+
+
+
+
+
+    const { value, suggestions } = this.state;
+
+    const inputProps = {
+      placeholder: '',
+      value,
+      onChange: this.onChange
+    };
+
     return <div>
 
  <div className='a1'>
@@ -48,20 +201,31 @@ class Home extends Component {
     <Zoom top>
    <div className='s2'>
    <h1 className='s1 s4'>Your IG Account Name</h1>
-   <input className='s3'/>
+<input  className='s3' placeholder='Type IG account name'/>
    </div>
     </Zoom>
 
  <Zoom top>
    <div  className='s2'>
    <h1 className='s1'>Select A Niche(choose from options)</h1>
-    <input  className='s3'/>
+   <div className='d2'>
+         <div className='d1'>
+   <Autosuggest
+        suggestions={suggestions}
+        onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+        onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+        getSuggestionValue={getSuggestionValue}
+        renderSuggestion={renderSuggestion}
+        inputProps={inputProps}
+      />
+      </div>
+ </div>
    </div>
     </Zoom>
 
      <Zoom top>
    <div className='s2' >
-   <button className='s6 s7'>Download</button>
+   <CSVLink data={csvData}><button className='s6 s7'>Download</button></CSVLink>
    </div>
  </Zoom>
    </div>
